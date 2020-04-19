@@ -22,15 +22,15 @@
 	height: 100%;
 	width: 450px;
 	object-fit: cover;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 .logo-news iframe{
 	height: 100%;
 	width: 450px;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 .news{

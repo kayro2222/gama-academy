@@ -34,6 +34,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	transition: 0.3s;
 }
 
 .nav-logo img{
@@ -49,6 +50,7 @@ header{
 
 .nav-menu a:hover{
 	color: #d3d3d3 !important;
+	opacity: 0.5;
 }
 
 .home-title{
