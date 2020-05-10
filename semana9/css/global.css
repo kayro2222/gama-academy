@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+html{
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body{
+	position: relative;
+	min-height: 100%;
+	font: 400 12px Roboto, sans-serif;
+	color: #222222;
+	background: #F0F0F5;
+	-webkit-font-smoothing: antialiased;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+
+/*.nav-logo img{
+	height: 75px;
+}
+
+.nav-menu a{
+	padding: 0 15px 0 15px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #FFF;
+	transition: 0.3s;
+}
+
+.nav-menu a:hover{
+	color: #d3d3d3 !important;
+}
+
+.home-title{
+	margin: 50px 150px 50px 150px;
+}
+
+.title{
+	text-align: center;
+	color: #0077bf;
+}
+
+.container{
+	margin: 50px 150px 50px 150px;
+	transition: 0.2s;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+footer{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #218EE1;
+	text-align: center;
+}
+
+footer p{
+	color: #FFF;
+}
+
+@media (max-width: 600px) {
+	.home-title{
+		margin: 20px;
+	}
+
+	.nav-logo img{
+		height: 40px;
+	}
+	
+	.nav-menu a{
+		font-size: 10px;
+		padding: 5px;
+	}
+
+	.container{
+		margin: 30px;
+	}
+}

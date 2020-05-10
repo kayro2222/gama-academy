@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Aluguéis por Temporada, Acomodações, Experiências e Lugares - Airbnb</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/body.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+	<script src="js/build.js"></script>
+
+	<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="navbar">
+				<a href="#">
+					<img src="assets/logo.png" alt="">
+				</a>
+				<div class="nav-content">
+					<div class="content">
+						<h3>Pipa Beach, Brasil</h3>
+					</div>
+					<div class="content">
+						<h3>28 de mai. - 5 de jun.</h3>
+					</div>
+					<div class="content">
+						<h3>2 hóspedes</h3>
+					</div>
+					<div class="content">
+						<i class="fa fa-search"></i>
+					</div>
+				</div>
+				<div class="nav-info">
+					<div class="info">
+						<a href="#">
+							<i class="fa fa-globe"></i>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</div>
+					<div class="info">
+						<a href="#">Ajuda</a>
+					</div>
+					<div class="btn-signin">
+						<a href="#">Cadastrar-se</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="content-container">
+				<div class="content-info">
+					<div class="info">
+						<p>
+							Mais de 20 acomodações · 28 de mai. - 5 de jun. · 2 hóspedes
+						</p>
+					</div>
+					<div class="title-info">
+						<h2>
+							Acomodações em Pipa Beach
+						</h2>
+					</div>
+					<div class="btn-info">
+						<a href="#">Flexibilidade de cancelamento</a>
+						<a href="#">Tipo de lugar</a>
+						<a href="#">Preço</a>
+						<a href="#">Reserva Instatânea</a>
+						<a href="#">Mais filtros</a>
+					</div>
+					<div class="obs-info">
+						<img src="https://a0.muscache.com/airbnb/static/packages/icon-uc-alarm.e0a2b02f.gif">
+						<p>
+							<b>Verifique as restrições de viagem antes de fazer uma reserva</b>. A saúde e a segurança das nossas comunidades vêm sempre em primeiro lugar. Siga as orientações do governo e viaje apenas se for essencial. <a href="#"> Saiba Mais</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="accommodations">
+					<div id="content" class="content">
+						<!-- DYNAMIC CONTENT -->
+					</div>
+				</div>
+				<!-- status elements -->
+				<div class="scroller-status">
+					<div class="infinite-scroll-request loader-ellips">
+						...
+					</div>
+					<p class="infinite-scroll-last">End of content</p>
+					<p class="infinite-scroll-error">No more pages to load</p>
+				</div>
+
+				<!-- pagination has path -->
+				<p class="pagination">
+					<a class="pagination__next" href="page2.html">Next page</a>
+				</p>
+			</div>
+			<div id="mapid"></div>
+		</div>
+	</main>
+	<footer>
+		<div>
+			<p><i class="far fa-copyright"></i> Developed by Kayro Mizael</p>
+			<p>Gama Academy 2020</p>
+		</div>
+	</footer>
+</body>
+</html>
+
+<script>
+	setTimeout(() => {
+		var elem = document.getElementById('content');
+		var infScroll = new InfiniteScroll( elem, {
+			path: '.pagination__next',
+			append: '.post',
+			history: false,
+		});
+		/*var infScroll = new InfiniteScroll(elem, {
+
+		});*/
+	}, 3000)
+	
+</script>

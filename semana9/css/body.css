@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+main{
+	background-color: #FFF;
+}
+
+.container{
+	padding-top: 90px;
+	display: flex;
+}
+
+.content-container{
+	margin-top: 50px;
+	width: 65%;
+	padding: 0 20px;
+	font: 400 14px Roboto, sans-serif;
+}
+
+.content-container .title-info{
+	margin-top: 10px;
+}
+
+.content-container .title-info h2{
+	font-size: 30px;
+}
+
+.content-container .btn-info{
+	margin-top: 40px;
+}
+
+.content-container .btn-info a{
+	padding: 10px;
+	border: 1px solid #B0B0B0;
+	border-radius: 20px;
+	transition: 0.2s;
+	color: #222222;
+}
+.content-container .btn-info a:not(:last-child){
+	margin-right: 10px;
+}
+
+.content-container .btn-info a:hover{
+	border-color: #000;
+}
+
+.content-container .obs-info{
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.content-container .obs-info img{
+	height: 40px;
+}
+
+.content-container .obs-info p{
+	padding-left: 10px;
+}
+
+.content-container .obs-info p a{
+	color: #000;
+	text-decoration: underline;
+}
+
+.accommodations{
+	margin-top: 30px;
+}
+
+.card{
+	padding: 25px 0;
+	display: flex;
+	cursor: pointer;
+	color: #717171;;
+}
+
+.card:not(:last-child){
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.card .card-img{
+	width: 35%;
+}
+
+.card .card-img img{
+	width: 100%;
+	border-radius: 5px;
+}
+
+.card .card-info{
+	width: 50%;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card .card-info .house-info{
+	display: flex;
+	align-items: center;
+}
+
+.card .card-info .house-info b{
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 5px;
+	color: #000;
+}
+
+.card .card-info .house-info p{
+	padding-left: 5px;
+	color:  #717171;
+}
+
+.card .card-info .house-description{
+	margin-top: 10px;
+	color: #000;
+}
+
+.card .card-info .house-equipment{
+	margin-top: 15px;
+}
+
+.card .price-info{
+	width: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card .price-info .rating{
+	display: flex;
+	align-items: center;
+}
+
+.card .price-info .rating i{
+	color: #FF385C;
+	font-size: 12px;
+	padding-right: 5px;
+}
+
+.card .price-info .rating .rating-qtd{
+	color: #717171;
+	margin-left: 5px;
+}
+
+.card .price-info .price{
+	font-size: 16px;
+	color: #000;
+}
+
+.card .price-info .price b{
+	font-size: 18px;
+}
+
+#mapid{
+	position: fixed;
+	height: 100vh;
+	width: 35%;
+	right: 0;
+}
